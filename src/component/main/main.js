@@ -1,11 +1,10 @@
 import React from 'react';
+import './mainStyle.css';
+import {Button} from 'react-bootstrap';
 
 export const Main = () =>
-  <div className="topnav">
-    <a className="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+  <div className="container-fluid">
+    <Button bsStyle="primary" type="submit">Submit</Button>
   </div>;
 
 export default Main;

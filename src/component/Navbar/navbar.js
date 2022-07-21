@@ -1,13 +1,15 @@
-// import Container from 'react-bootstrap/Container';
-// import Nav from 'react-bootstrap/Nav';
-// import Navbar from 'react-bootstrap/Navbar';
-// import NavDropdown from 'react-bootstrap/NavDropdown';
-import {Button} from 'react-bootstrap';
+import React from 'react';
+import './navStyle.css';
 
 function NavigationBar() {
   return (
-    <div className="container">
-      <Button bsStyle="primary" type="submit">Submit</Button>
+    <div className='container-fluid'>
+      <div className="topnav">
+        <a className="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
     </div>
   );
 }
