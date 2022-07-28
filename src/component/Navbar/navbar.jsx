@@ -1,7 +1,6 @@
 import React from 'react';
 import './navStyle.css';
 import logo from '../../assets/logo.png';
-import cart from '../../assets/cart.png';
 // import Button from 'react-bootstrap/Button';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -17,9 +16,7 @@ function NavigationBar() {
         <a href="#about">Story</a>
         <a href="#about">Support</a>
         <div className="right">
-          <a href="#about">Cart
-            <img className='cart' src={cart} alt="Logo"></img>
-          </a>
+          <a href="#about">Cart <span>0</span></a>
         </div>
       </div>
 

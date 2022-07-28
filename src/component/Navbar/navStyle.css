@@ -25,6 +25,10 @@
 .logo{
   width: 23px;
 }
+span{
+  background-color: gray;
+  border-radius: 10px;
+}
 
 .cart{
   width: 10px;
