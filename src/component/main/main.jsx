@@ -1,10 +1,42 @@
-import React from 'react';
-import './mainStyle.css';
-import {Button} from 'react-bootstrap';
+import React, {Component} from 'react';
 
-export const Main = () =>
-  <div className="container-fluid">
-    <Button bsStyle="primary" type="submit">Submit</Button>
-  </div>;
+export class main extends Component {
+  // Appract number 1
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: 'hello',
+    };
+    // Appract number 2
+    // this.clickHandeler = this.clickHandeler.bind(this);
+  }
+  // Appract number 3
+  clickHandeler() {
+    this.setState({
+      message: 'goodBye',
+    });
+    console.log(this);
+  }
 
-export default Main;
+  // Appract number 3
+  clickHandeler = () =>{
+    this.setState({
+      message: 'GoodBye!',
+    });
+  };
+
+  render() {
+    return (
+      <div>
+        <div>{this.state.message}</div>
+        {/* THREE APPROACH WITH BUTTON ONCLICK  */}
+        {/* <button onClick={this.clickHandeler.
+        bind(this)}>Click me</button> */}
+        <button onClick={() => this.clickHandeler()}>Click me</button>
+        <button onClick={this.clickHandeler}>Click me</button>
+      </div>
+    );
+  }
+}
+
+export default main;

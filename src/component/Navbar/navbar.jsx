@@ -19,7 +19,6 @@ function NavigationBar() {
           <a href="#about">Cart <span>0</span></a>
         </div>
       </div>
-
     </div>
   );
 }

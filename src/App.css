@@ -1,3 +1,13 @@
 .App {
   padding: 0px;
+  text-align: center;
+}
+button{
+  width: 20%;
+  border-radius: 30px ;
+}
+input[type="text"]{
+  background-color: aliceblue;
+  height: 30px;
+  border-radius: 30px ;
 }
