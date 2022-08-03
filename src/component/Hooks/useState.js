@@ -30,8 +30,8 @@ function Usestate() {
     setName('');
   }
   return (
-    <div className="App">
-      <h1>React demo</h1>
+    <div>
+      <h1>React Hooks Use State</h1>
 
       <div><h1>Hello {flag ? name : ''}</h1></div>
       <button onClick={changeName}>Click Me</button>

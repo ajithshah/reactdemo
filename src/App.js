@@ -10,7 +10,7 @@ import UseEffect from './component/Hooks/useEffect';
 function App() {
   return (
     <div className="App">
-      <h1>Hooks User State</h1>
+      <h1>React</h1>
       {/* <Props
         name="Google "
         discription="Company"
