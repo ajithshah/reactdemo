@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 
 function initialvalue() {
-  console.log('Function Clicked');
   return 0;
 }
 
-function Usestate() {
+function UseState() {
   const [name, setName] = useState('Ajith');
+  const [changes, setChanges] = useState('');
   const [flag, setFlag] = useState(false);
   const [steps, setSteps] = useState(initialvalue());
   const [names, setNames] = useState([]);
@@ -28,6 +28,15 @@ function Usestate() {
     }
     setNames([...names, {id: names.length, name}]);
     setName('');
+  }
+  function change1() {
+    setChanges('hi');
+  }
+  function change2() {
+    setChanges('hii');
+  }
+  function change3() {
+    setChanges('hiii');
   }
   return (
     <div>
@@ -58,8 +67,13 @@ function Usestate() {
         )}
       </ul>
       <hr></hr>
+      <button onClick={change1}>Change 1</button>
+      <button onClick={change2}>Change 2</button>
+      <button onClick={change3}>Change 3</button>
+      <div>{changes}</div>
+      <hr></hr>
     </div>
   );
 }
 
-export default Usestate;
+export default UseState;

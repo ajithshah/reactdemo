@@ -4,7 +4,7 @@ import React from 'react';
 // import NavigationBar from './component/Navbar/navbar.jsx';
 // import Main from './component/Main/main.jsx';
 // import EventBind from './component/Event/Event.jsx';
-// import Usestate from './component/Hooks/useState';
+// import UseState from './component/Hooks/useState';
 import UseEffect from './component/Hooks/useEffect';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
       {/* <NavigationBar/> */}
       {/* <Main/> */}
       {/* <EventBind/> */}
-      {/* <Usestate/> */}
+      {/* <UseState/> */}
       <UseEffect/>
 
     </div>
